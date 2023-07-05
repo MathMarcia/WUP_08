@@ -38,6 +38,11 @@ summary.lm(simp)
 
 The line across is the regression line. If the neck around of the bear is 20 inches then the length is predicted to be about 57 inches long. It helps to explain a numerical with another numerical. The assessment is the second thing that came out. the second plot has important data. The residual standard error is 5.376 the smaller it is the better the model is. the adjusted R-square the largest is the better model.
 
+NECK
+Residual standard error: 5.376 on 52 degrees of freedom
+Multiple R-squared:  0.7524,	Adjusted R-squared:  0.7476
+
+
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
 
@@ -51,6 +56,13 @@ summary.lm(mychest)
 When comparing the residual standard Error, this is smaller and better model. because the neck was 5.376 and chest is 4.939. In order of ranking  chest is above neck. There is a difference between the two. 
 
 
+CHEST
+Residual standard error: 4.939 on 52 degrees of freedom
+Multiple R-squared:  0.791,	Adjusted R-squared:  0.7869
+
+NECK
+Residual standard error: 5.376 on 52 degrees of freedom
+Multiple R-squared:  0.7524,	Adjusted R-squared:  0.7476
 
 ```{r}
 myheadwth <- lm(LENGTH~HEADWTH,data=bears)
@@ -59,6 +71,18 @@ abline(myheadwth)
 summary.lm(myheadwth)
 ```
 This 3rd model compared headwth with length. The residual standard error is 7.32 compared to the neck and chest they are smaller and headwt is higher. The adjusted R square is a bit lower at 0.5321
+
+CHEST
+Residual standard error: 4.939 on 52 degrees of freedom
+Multiple R-squared:  0.791,	Adjusted R-squared:  0.7869
+
+NECK
+Residual standard error: 5.376 on 52 degrees of freedom
+Multiple R-squared:  0.7524,	Adjusted R-squared:  0.7476
+
+Headwth
+Residual standard error: 7.32 on 52 degrees of freedom
+Multiple R-squared:  0.5409,	Adjusted R-squared:  0.5321
 
 ```{r}
 myweight <- lm(LENGTH~WEIGHT,data=bears)
@@ -84,6 +108,9 @@ Weight
 Residual standard error: 5.432 on 52 degrees of freedom
 Multiple R-squared:  0.7472,	Adjusted R-squared:  0.7423 
 
+Headwth
+Residual standard error: 7.32 on 52 degrees of freedom
+Multiple R-squared:  0.5409,	Adjusted R-squared:  0.5321
 
 ```{r}
 myage <- lm(LENGTH~AGE,data=bears)
@@ -98,6 +125,8 @@ Multiple R-squared:  0.5166,	Adjusted R-squared:  0.5073
 
 the order are 
 
+
+
 chest
 Residual standard error: 4.939 on 52 degrees of freedom
 Multiple R-squared:  0.791,	Adjusted R-squared:  0.7869 
@@ -110,6 +139,10 @@ Weight
 Residual standard error: 5.432 on 52 degrees of freedom
 Multiple R-squared:  0.7472,	Adjusted R-squared:  0.7423
 
+Headwth
+Residual standard error: 7.32 on 52 degrees of freedom
+Multiple R-squared:  0.5409,	Adjusted R-squared:  0.5321
+
 Age 
 Residual standard error: 7.511 on 52 degrees of freedom
 Multiple R-squared:  0.5166,	Adjusted R-squared:  0.5073
@@ -120,10 +153,40 @@ Multiple R-squared:  0.5166,	Adjusted R-squared:  0.5073
 myheadlen <- lm(LENGTH~HEADLEN,data=bears)
 plot(LENGTH~HEADLEN,data=bears)
 abline(myheadlen)
-summary.lm(headlen)
+summary.lm(myheadlen)
 ```
 
+The regression line shows that 10 headlen is 45 in length. the data numerical shows
+Residual standard error: 4.235 on 52 degrees of freedom
+Multiple R-squared:  0.8463,	Adjusted R-squared:  0.8434 
+
+Comparisons
+Headlen
+Residual standard error: 4.235 on 52 degrees of freedom
+Multiple R-squared:  0.8463,	Adjusted R-squared:  0.8434
+
+chest
+Residual standard error: 4.939 on 52 degrees of freedom
+Multiple R-squared:  0.791,	Adjusted R-squared:  0.7869 
+
+Neck
+Residual standard error: 5.376 on 52 degrees of freedom
+Multiple R-squared:  0.7524,	Adjusted R-squared:  0.7476
+
+Weight
+Residual standard error: 5.432 on 52 degrees of freedom
+Multiple R-squared:  0.7472,	Adjusted R-squared:  0.7423
+
+Headwth
+Residual standard error: 7.32 on 52 degrees of freedom
+Multiple R-squared:  0.5409,	Adjusted R-squared:  0.5321
+
+Age 
+Residual standard error: 7.511 on 52 degrees of freedom
+Multiple R-squared:  0.5166,	Adjusted R-squared:  0.5073
 
 
+# Conclusion 
 
-
+Today I learned to do comparison in regression lines. I compared 6 types of numerical by numerical. The best is the headlen with the lowest Residual Standard Error of 4.235 and the bigger Adjusted R-Square of 0.8434. 
+The worst is Age with a highest Residual Standard error of 7.511 and the Adjusted R -Square is the smallest 0.5073. 
