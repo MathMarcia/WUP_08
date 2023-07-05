@@ -36,7 +36,7 @@ summary.lm(simp)
 ```
 
 
-The line across is the regression line. If the neck around of the bear is 20 inches then the length is predicted to be about 57 inches long. It helps to explain a numerical with another numerical. The assessment is the second thing that came out. the second plot has important data. The residual standard error is 5.376 the smaller it is the better the model is. the adjusted R-square the largest is the better model. 
+The line across is the regression line. If the neck around of the bear is 20 inches then the length is predicted to be about 57 inches long. It helps to explain a numerical with another numerical. The assessment is the second thing that came out. the second plot has important data. The residual standard error is 5.376 the smaller it is the better the model is. the adjusted R-square the largest is the better model.
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
