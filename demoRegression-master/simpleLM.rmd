@@ -83,3 +83,17 @@ Multiple R-squared:  0.7524,	Adjusted R-squared:  0.7476
 Weight
 Residual standard error: 5.432 on 52 degrees of freedom
 Multiple R-squared:  0.7472,	Adjusted R-squared:  0.7423 
+
+
+```{r}
+myage <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(myage)
+summary.lm(myage)
+```
+
+
+
+
+
+
