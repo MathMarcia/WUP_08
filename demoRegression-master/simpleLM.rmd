@@ -67,3 +67,19 @@ abline(myweight)
 summary.lm(myweight)
 ```
 
+The model comparison for this is weight: with residual standard error of 5.432 and the adjusted R-Square is 0.7423. .
+
+comparing them all 
+
+
+chest
+Residual standard error: 4.939 on 52 degrees of freedom
+Multiple R-squared:  0.791,	Adjusted R-squared:  0.7869 
+
+Neck
+Residual standard error: 5.376 on 52 degrees of freedom
+Multiple R-squared:  0.7524,	Adjusted R-squared:  0.7476
+
+Weight
+Residual standard error: 5.432 on 52 degrees of freedom
+Multiple R-squared:  0.7472,	Adjusted R-squared:  0.7423 
