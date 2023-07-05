@@ -59,3 +59,11 @@ abline(myheadwth)
 summary.lm(myheadwth)
 ```
 This 3rd model compared headwth with length. The residual standard error is 7.32 compared to the neck and chest they are smaller and headwt is higher. The adjusted R square is a bit lower at 0.5321
+
+```{r}
+myweight <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(myweight)
+summary.lm(myweight)
+```
+
