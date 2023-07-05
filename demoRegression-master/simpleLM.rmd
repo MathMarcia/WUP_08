@@ -114,3 +114,9 @@ Age
 Residual standard error: 7.511 on 52 degrees of freedom
 Multiple R-squared:  0.5166,	Adjusted R-squared:  0.5073
 
+```{r}
+mymonth <- lm(LENGTH~MONTH,data=bears)
+plot(LENGTH~MONTH,data=bears)
+abline(mymonth)
+summary.lm(mymonth)
+```
