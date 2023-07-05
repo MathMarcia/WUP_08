@@ -52,3 +52,10 @@ When comparing the residual standard Error, this is smaller and better model. be
 
 
 
+```{r}
+myheadwth <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(myheadwth)
+summary.lm(myheadwth)
+```
+This 3rd model compared headwth with length. The residual standard error is 7.32 compared to the neck and chest they are smaller and headwt is higher. 
